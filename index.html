@@ -1,0 +1,502 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Portfolio of Ibrahim Zakariyau Hamida, a Software Engineering student and web developer based in Kano, Nigeria.">
+
+  <meta name="theme-color" content="#0a0a0f">
+
+  <title>Ibrahim Zakariyau Hamida | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+
+    <a class="logo" href="#home">
+      IBRAHIM <span>ZAKARIYAU</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+      <a
+        class="nav-cta"
+        href="https://wa.me/2347062141209"
+        target="_blank"
+        rel="noopener noreferrer">
+        Let's Talk
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero container" id="home">
+
+      <div class="hero-content">
+
+        <div class="hero-label">
+
+          <span class="status-dot" aria-hidden="true"></span>
+
+          WEB DEVELOPER · KANO, NIGERIA
+
+        </div>
+
+        <h1>
+          Hi, I'm
+          <span class="highlight">
+            Ibrahim<br>
+            Zakariyau Hamida.
+          </span>
+          <br>
+          I create and maintain websites.
+        </h1>
+
+        <p class="hero-description">
+
+          I build modern, useful and user-friendly websites.
+          Explore my work and contact me if you would like
+          us to work together.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="button button-light">
+            View My Work
+          </a>
+
+          <a
+            href="https://wa.me/2347062141209"
+            class="button button-outline"
+            target="_blank"
+            rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            What I have been working on
+          </span>
+
+          <h2>Featured Projects</h2>
+
+          <p>
+            A selection of website and software projects.
+            Select a project to view its current status.
+          </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+          <!-- PROJECT ONE -->
+          <article class="project-card">
+
+            <div class="project-icon" aria-hidden="true">
+              🎓
+            </div>
+
+            <h3>School Management System</h3>
+
+            <p>
+              A school platform concept for managing students,
+              teachers, fees and academic results.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">PHP</span>
+
+            </div>
+
+            <button
+              class="button button-outline project-button"
+              type="button"
+              data-project="School Management System">
+
+              View Details
+
+            </button>
+
+          </article>
+
+
+          <!-- PROJECT TWO -->
+          <article class="project-card">
+
+            <div class="project-icon" aria-hidden="true">
+              🛒
+            </div>
+
+            <h3>Online Store</h3>
+
+            <p>
+              An online store concept for selling foodstuffs,
+              with a shopping cart and order management.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">E-commerce</span>
+              <span class="tag">JavaScript</span>
+
+            </div>
+
+            <button
+              class="button button-outline project-button"
+              type="button"
+              data-project="Online Store">
+
+              View Details
+
+            </button>
+
+          </article>
+
+
+          <!-- PROJECT THREE -->
+          <article class="project-card">
+
+            <div class="project-icon" aria-hidden="true">
+              💼
+            </div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+              A personal website for presenting projects,
+              skills and contact information online.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Portfolio</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+
+            </div>
+
+            <button
+              class="button button-outline project-button"
+              type="button"
+              data-project="Personal Portfolio">
+
+              View Details
+
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            A little introduction
+          </span>
+
+          <h2>About Me</h2>
+
+          <p>
+            Get to know me, my background and the work
+            I enjoy doing.
+          </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+
+          <!-- PROFILE IMAGE -->
+          <div class="profile-image-wrap">
+
+            <img
+              class="profile-photo"
+              id="profilePhoto"
+              src="zaks.jpg"
+              alt="Portrait of Ibrahim Zakariyau Hamida">
+
+            <div
+              class="photo-fallback"
+              id="photoFallback"
+              aria-label="Profile image unavailable">
+
+              IZ
+
+            </div>
+
+          </div>
+
+
+          <!-- ABOUT CONTENT -->
+          <div class="about-content">
+
+            <h3>I'm Ibrahim Zakariyau Hamida</h3>
+
+            <p>
+
+              I am a passionate Software Engineering student
+              at the <strong>Federal University Dutse (FUD)</strong>,
+              Department of Software Engineering.
+
+              I currently serve as the
+              <strong>Class Representative (CR)</strong>
+              of my department — a role that has taught me
+              leadership, responsibility and teamwork.
+
+            </p>
+
+
+            <p>
+
+              I create and maintain modern, fast and user-friendly
+              websites.
+
+              From school management systems to e-commerce stores
+              and personal portfolios, I enjoy turning ideas into
+              useful digital experiences.
+
+            </p>
+
+
+            <p>
+
+              When I'm not coding, I'm learning new technologies,
+              helping coursemates and working to improve my
+              development skills.
+
+              My goal is to build products that matter and help
+              businesses grow online.
+
+            </p>
+
+
+            <p class="availability">
+
+              &gt; Available for freelance work · Internships · Collaborations
+
+            </p>
+
+
+            <!-- PERSONAL INFORMATION -->
+            <div class="about-list">
+
+              <div class="about-item">
+                🎓 Federal University Dutse — Software Engineering
+              </div>
+
+              <div class="about-item">
+                👑 Class Representative — Software Engineering
+              </div>
+
+              <div class="about-item">
+                📍 Kano, Nigeria — Remote Worldwide
+              </div>
+
+              <div class="about-item">
+                💻 Web Development, UI Design and PHP
+              </div>
+
+              <div class="about-item">
+                📞 +234 706 214 1209
+              </div>
+
+              <div class="about-item">
+                ⚡ Fast, clean and modern code
+              </div>
+
+            </div>
+
+
+            <!-- ABOUT BUTTONS -->
+            <div class="about-buttons">
+
+              <a
+                href="https://wa.me/2347062141209"
+                class="button button-light"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Let's Work Together →
+
+              </a>
+
+              <a href="#projects" class="button button-outline">
+
+                View Projects
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-card">
+
+          <span class="eyebrow">
+            Have a project in mind?
+          </span>
+
+          <h2>Let's Work Together</h2>
+
+          <p>
+
+            Do you need a website or have an idea you would
+            like to discuss?
+
+            Send me a message on WhatsApp.
+
+          </p>
+
+          <a
+            class="button button-light"
+            href="https://wa.me/2347062141209"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Contact Me on WhatsApp
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <span>
+      ©️ <span id="currentYear">2026</span>
+      IBRAHIM ZAKARIYAU HAMIDA
+    </span>
+
+    <span>
+      KANO, NIGERIA · REMOTE WORLDWIDE
+    </span>
+
+  </footer>
+
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div
+    class="modal"
+    id="projectModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    aria-hidden="true">
+
+    <div class="modal-box">
+
+      <div class="modal-icon" aria-hidden="true">
+        🚧
+      </div>
+
+      <h2 id="modalTitle">
+        Project Details
+      </h2>
+
+      <p id="modalDescription">
+
+        More information about this project will be available soon.
+
+      </p>
+
+      <button
+        class="button button-light"
+        id="closeModal"
+        type="button">
+
+        Close
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>
